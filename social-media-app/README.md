@@ -70,6 +70,5 @@ To get started with the project, clone the repository and install the necessary 
 2. Run `npm install` to install dependencies.
 3. Run `npm start` to start the frontend application.
 
-## License
 
-This project is licensed under the MIT License.
+
