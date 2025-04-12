@@ -36,14 +36,6 @@ Add all the required code/files to full implement the "CREATE" operation
 
 ## System Architecture
 
-```mermaid
-graph TD
-    Client -->|HTTP Requests| API[Express REST API]
-    API -->|CRUD Operations| MongoDB[(MongoDB Database)]
-    API -->|Handles Requests| Controllers
-    Controllers -->|Interacts with| Models
-    Models -->|Schema Definitions| MongoDB
-```
 
 ## Folder Structure
 
