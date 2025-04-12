@@ -1,0 +1,177 @@
+{
+
+	"info": {
+		"name": "Restaurant and Menu API",
+		"_postman_id": "unique-id",
+		"description": "Postman collection for restaurant and menu item routes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Restaurants",
+			"item": [
+				{
+					"name": "Create Restaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Sample Restaurant\",\n\t\"location\": \"Sample Location\",\n\t\"cuisine\": \"Sample Cuisine\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["restaurants"]
+						}
+					}
+				},
+				{
+					"name": "Get All Restaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["restaurants"]
+						}
+					}
+				},
+				{
+					"name": "Get Restaurant by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants/:id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["restaurants", ":id"]
+						}
+					}
+				},
+				{
+					"name": "Update Restaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Updated Restaurant\",\n\t\"location\": \"Updated Location\",\n\t\"cuisine\": \"Updated Cuisine\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants/:id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["restaurants", ":id"]
+						}
+					}
+				},
+				{
+					"name": "Delete Restaurant",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants/:id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["restaurants", ":id"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Menu Items",
+			"item": [
+				{
+					"name": "Create Menu Item",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Sample Menu Item\",\n\t\"price\": 10.99,\n\t\"description\": \"Sample Description\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/menu-items",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["menu-items"]
+						}
+					}
+				},
+				{
+					"name": "Get All Menu Items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/menu-items",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["menu-items"]
+						}
+					}
+				},
+				{
+					"name": "Get Menu Item by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/menu-items/:id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["menu-items", ":id"]
+						}
+					}
+				},
+				{
+					"name": "Update Menu Item",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Updated Menu Item\",\n\t\"price\": 12.99,\n\t\"description\": \"Updated Description\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/menu-items/:id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["menu-items", ":id"]
+						}
+					}
+				},
+				{
+					"name": "Delete Menu Item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/menu-items/:id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3000",
+							"path": ["menu-items", ":id"]
+						}
+					}
+				}
+			]
+		}
+	]
+}
