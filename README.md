@@ -139,9 +139,3 @@ The `Restaurant` schema contains the following fields:
   }
 }
 ```
-
-## Notes
-
-- Ensure your MongoDB Atlas cluster is properly set up and accessible.
-- Use environment variables to securely store sensitive information like the MongoDB connection string.
-- The application uses the MEN (Models, Express, Node.js) architecture for better organization and scalability.
